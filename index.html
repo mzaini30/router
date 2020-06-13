@@ -1,0 +1,28 @@
+---
+---
+<!DOCTYPE HTML>
+<html>
+<head>
+ <title>Blog</title>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width,initial-scale=1">
+ <link rel="stylesheet" href="vendor/bootstrap.min.css">
+ <link rel="stylesheet" href="index.css">
+ <script src="vendor/dexie.min.js"></script>
+ <script src="vendor/vconsole.min.js"></script>
+ <script src="vendor/router.js"></script>
+</head>
+<body>
+ <div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+   <div class="navbar-header"><a href="#" class="navbar-brand">Blog</a></div>
+  </div>
+ </div>
+ <div class="container">
+  <div class="tampil"></div>
+ </div>
+ {% include beranda.html %}
+ {% include tulis.html %}
+ <script src="index.js"></script>
+</body>
+</html>

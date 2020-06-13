@@ -1,0 +1,22 @@
+<div class="sembunyi tulis">
+ <form action="">
+  <div class="form-group">
+   <label for="">Judulnya</label>
+   <input type="text" class="form-control judul" required>
+  </div>
+  <div class="form-group">
+   <label for="">Isinya</label>
+   <textarea name="" id="" cols="30" rows="10" class="form-control tinggi"></textarea>
+  </div>
+ </form>
+</div>
+<script>
+ tulis = () => {
+  tinggi = () => {
+   document.querySelector(".tinggi").style.height = window.innerHeight - 200 + "px"
+  }
+  tinggi()
+  window.addEventListener("resize", tinggi)
+  document.querySelector(".judul").value = location.hash.split("/")[1]
+ }
+</script>
